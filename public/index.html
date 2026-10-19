@@ -281,19 +281,16 @@
 
       .spot--rail { width: 160px; height: 600px; flex-direction: column; gap: 16px; padding: 26px 14px 18px; background: radial-gradient(160% 60% at 50% 0%, rgba(255, 138, 76, 0.18), transparent 70%), var(--surface); }
       .spot--rail .spot-title { font-size: 1.125rem; }
+      .spot--rail .spot-title--open { font-size: 1.5rem; }
+      .spot--rail .spot-kicker-size { display: block; margin-top: 4px; }
       .spot--rail .spot-cta { width: 100%; margin-top: auto; }
 
-      /* Mert's own projects in the side banners until someone buys them. */
+      /* Mert's own project in the left banner until someone buys it. */
       .spot-brand { display: flex; align-items: center; gap: 8px; color: var(--ink); font-size: 0.75rem; font-weight: 600; }
       .spot-mark { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
       .spot--tv { background: radial-gradient(160% 60% at 50% 0%, rgba(61, 220, 132, 0.18), transparent 70%), var(--surface); }
       .spot--tv::before, .spot--tv .spot-mark { background: linear-gradient(135deg, #6ff0a8, #3ddc84 45%, #22c3a6); }
       .spot--tv:hover, .spot--tv:focus-visible { border-color: #3ddc84; }
-      .spot--ig { background: radial-gradient(160% 60% at 50% 0%, rgba(214, 41, 118, 0.2), transparent 70%), var(--surface); }
-      .spot--ig::before, .spot--ig .spot-mark { background: linear-gradient(135deg, #feda75, #fa7e1e 30%, #d62976 60%, #962fbf); }
-      .spot--ig:hover, .spot--ig:focus-visible { border-color: #d62976; }
-      .spot-shot { display: block; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #0d1014; }
-      .spot-shot img { width: 100%; height: auto; vertical-align: top; }
       pre.spot-term { max-height: none; margin: 0; padding: 8px 6px; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #0c0b0a; color: var(--ink); font: 0.625rem/1.6 var(--mono); white-space: pre; }
       .term-prompt { color: #3ddc84; }
       .term-note { color: #8d867c; }
@@ -487,7 +484,7 @@
       </section>
     </main>
 
-    <!-- The side banners show two of Mert's own projects until someone buys them. -->
+    <!-- Left: Mert's Android TV guide until someone buys it. Right: open for an advertiser. -->
     <aside class="spot-rail spot-rail--left" aria-label="Android TV">
       <a class="spot spot--rail spot--tv" href="https://tv.cobanov.dev/?ref=3dprinter" data-href-en="https://tv.cobanov.dev/?ref=3dprinter" data-href-tr="https://tv.cobanov.dev/tr/?ref=3dprinter" data-oa-event="rail-tv">
         <span class="spot-brand"><span class="spot-mark" aria-hidden="true"></span><span lang="en">Android TV guide</span><span lang="tr">Android TV rehberi</span></span>
@@ -502,13 +499,12 @@
         <span class="spot-cta"><span lang="en">Open the guide</span><span lang="tr">Rehberi aç</span></span>
       </a>
     </aside>
-    <aside class="spot-rail spot-rail--right" aria-label="Instagram Unfollowers">
-      <a class="spot spot--rail spot--ig" href="https://instagram.cobanov.dev/?lang=en&amp;ref=3dprinter" data-href-en="https://instagram.cobanov.dev/?lang=en&amp;ref=3dprinter" data-href-tr="https://instagram.cobanov.dev/?ref=3dprinter" data-oa-event="rail-instagram">
-        <span class="spot-brand"><span class="spot-mark" aria-hidden="true"></span>Instagram Unfollowers</span>
-        <span class="spot-title"><span lang="en">See who doesn't follow you back on Instagram</span><span lang="tr">Instagram'da seni geri takip etmeyenleri gör</span></span>
-        <span class="spot-shot"><img lang="en" src="assets/instagram-panel-en.png" width="384" height="640" alt="The Instagram Unfollowers panel listing accounts that don't follow back" loading="lazy" decoding="async" /><img lang="tr" src="assets/instagram-panel-tr.png" width="384" height="640" alt="Geri takip etmeyen hesapları listeleyen Instagram Unfollowers paneli" loading="lazy" decoding="async" /></span>
-        <span class="spot-pitch"><span lang="en">Free, in your browser. No password, no app.</span><span lang="tr">Ücretsiz, tarayıcında çalışır. Şifre yok, uygulama yok.</span></span>
-        <span class="spot-cta"><span lang="en">Open the tool</span><span lang="tr">Aracı aç</span></span>
+    <aside class="spot-rail spot-rail--right" aria-label="Ad space">
+      <a class="spot spot--rail" href="mailto:mertcobanov@gmail.com?subject=3dprinter.cobanov.dev%20ad%3A%20right%20rail" data-oa-event="ad-right">
+        <span class="spot-kicker"><span lang="en">Ad space</span><span lang="tr">Reklam alanı</span><span class="spot-kicker-size">160×600</span></span>
+        <span class="spot-title spot-title--open"><span lang="en">Put your brand here</span><span lang="tr">Markanı burada göster</span></span>
+        <span class="spot-pitch"><span lang="en">Reach people setting up and tuning their 3D printers.</span><span lang="tr">3D yazıcısını kurup ayarlayanlara ulaş.</span></span>
+        <span class="spot-cta"><span lang="en">Advertise</span><span lang="tr">Reklam ver</span></span>
       </a>
     </aside>
 

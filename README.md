@@ -13,8 +13,7 @@ https://3dprinter.cobanov.dev
   Turkish sit side by side as `lang` attributes and the TR/EN button switches them.
 - `public/prompt.txt`: the prompt the page loads, fills with the optional clue
   and copies.
-- `public/assets/`: the social card and the Instagram panel shots used in the
-  side banner.
+- `public/assets/`: the social card.
 
 ## Deploy
 
